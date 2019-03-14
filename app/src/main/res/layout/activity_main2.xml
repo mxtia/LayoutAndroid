@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="14dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:weightSum="10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="16dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/teks1"
+                    android:text="Spotify is a Swedish audio streaming platform that provides DRM-protected music and podcasts from record labels and media companies. As a freemium service, basic features are free with advertisements or automatic music videos, while additional features, such as improved streaming quality, are offered via paid subscriptions."
+                    android:textAlignment="inherit"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </GridLayout>
+
+</LinearLayout>
